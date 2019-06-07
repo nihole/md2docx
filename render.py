@@ -21,10 +21,13 @@ def insert_data (sec_, md_filepath_):
     doc.Sections(sec_).Range.Delete()
     word.Selection.InsertBreak(Type=wdSectionBreakContinuous)
     word.Selection.GoTo(What=wdGoToSection, Which=wdGoToFirst, Count=sec_)
+    tmp_doc_path = dirpath + "/tmp/tmp_word.docx"
+    md_full_path = dirpath + "/" + md_filepath_
 
-    os.system("pandoc -s -f markdown -o ./tmp/tmp_word.docx %s --data-dir ./" % md_filepath_)
-    word.Selection.InsertFile(FileName= dirpath + "/tmp/tmp_word.docx")
-    os.system("rm ./tmp/tmp_word.docx")
+
+    os.system("pandoc -s -f markdown -o %s %s --data-dir ./" % (tmp_doc_path, md_full_path))
+    word.Selection.InsertFile(FileName= tmp_doc_path)
+    os.system("rm %s" % tmp_doc_path)
    
 
 def table_style(TableStyle_, sec_):
@@ -49,7 +52,7 @@ def figure_caption(sec_):
 
     for fgr in doc.Sections(sec_).Range.InlineShapes:
         fgr.Select()
-        if (not fgr.AlternativeText == ''):
+        if (not fgr.AlternativeText=='' and not fgr.AlternativeText=='---' and not fgr.AlternativeText=='***' and not fgr.AlternativeText=='___'):
             fgr.Range.InsertCaption(Label="Figure", TitleAutoText="", Title=". " \
             + fgr.AlternativeText, Position=wdCaptionPositionBelow, ExcludeLabel=0)
             word.Selection.GoToNext (wdGoToLine)
@@ -65,15 +68,20 @@ def structure_verification(sec_, name_):
     word.Selection.Range.GoTo(What=wdGoToHeading, Which=wdGoToFirst)
     word.Selection.HomeKey(wdLine)
     word.Selection.Expand(wdParagraph)
+#    word.Selection.Range.Bookmarks("\line").Select
     title = word.Selection.Text
     title = title[:-1]
+    if (title == ""):
+        print ("  Please remove all blank lines in the beginning of section %s!" % sec_)
+        quit()
     if (not title == name_):
         print ("\n  ###############################################")
         print ("\n  Section: %s, title_yaml: %s, title_docx: %s" % (sec_, name_, title))
         print ("  Correct dotx or YAML file!")
         quit()
 
-
+def update_fields():
+    doc.Fields.Update()
 
 ############### Main body ######################
 
@@ -94,7 +102,8 @@ else:
 
 ## current folder:
 
-dirpath = os.getcwd()
+dirpath_ = os.getcwd()
+dirpath = dirpath_.replace("\\", "/")
 
 ## take data from YAML file 
 
@@ -110,7 +119,7 @@ if (float(yaml_version) < 5.1):
 else:
     yaml_data = yaml.load(data1,Loader=yaml.FullLoader)
 
-yse_no = "no"
+yes_no = "no"
 message = '\n  The next sections will be changed: \n'
 for j in yaml_data["sections"]:
     if not j["action"]== "ignore":
@@ -145,10 +154,11 @@ for j in yaml_data["sections"]:
         if (yaml_data["script"]["actions"]["table_caption"] == "yes"):
             table_caption(sec)
         if (yaml_data["script"]["actions"]["figure_caption"] == "yes"):
+            
             figure_caption(sec)
 
-# if (yaml_data["script"]["actions"]["update_fields"] == "yes"):
-#    update_fields()
+if (yaml_data["script"]["actions"]["update_fields"] == "yes"):
+    update_fields()
 
 if (yaml_data["script"]["word"]["save"] == "yes"):
     doc.Save()

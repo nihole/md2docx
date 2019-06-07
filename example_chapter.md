@@ -1,7 +1,9 @@
 # Example Chapter
 
 
+
 ## h2 Heading
+
 ### h3 Heading
 #### h4 Heading
 ##### h5 Heading
@@ -139,15 +141,9 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 ## Images
 
 ![Minion](media/minion.png)
-![Stormtroopocat](media/stormtroopocat.jpg)
-
-Like links, Images also have a footnote style syntax
-
-![Nindzya][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: media/dojocat.jpg  "The Dojocat"
+Figiure: Minion
+!["Stormtroopocat"](media/stormtroopocat.jpg)
+Figure: Stormtroopocat
 
 
 ## Plugins
