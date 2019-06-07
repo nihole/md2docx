@@ -4,7 +4,7 @@ markdown -> docx word
 ## Installation
 - clone this project into your local folder
 - install Python3 with YAML and pywin32 packages (win32com.client)
-- install Pandok
+- install Pandoc
 - install any MarkDown editor. I use Typora. Any simple text editor can be used, but this is not very convenient
 
 ## Files
