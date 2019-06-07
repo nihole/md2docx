@@ -26,7 +26,7 @@ From <a href="https://github.com/nihole/md2docx/blob/master/structure.yml">struc
 
 actions:  
 &nbsp;&nbsp; structure_verification: "yes"  
-&nbsp;&nbsp; change_data: "yes" 
+&nbsp;&nbsp; change_data: "yes"  
 &nbsp;&nbsp; table_style: "yes"  
 &nbsp;&nbsp; table_caption: "yes"  
 &nbsp;&nbsp; figure_caption: "yes"  
