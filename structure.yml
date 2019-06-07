@@ -29,7 +29,7 @@ general:
   dest_word_file: "template.docx"
 
 # 
-# Manually split the wod document into sections.
+# Manually split the word document into sections.
 # 
 # number: the number of the section (1,2,...)
 # name: the first title in the section. Scipt verifies if this title is really the first title if the section with the number above.
