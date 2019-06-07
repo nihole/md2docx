@@ -36,7 +36,7 @@ actions:
 - change_data - inserts data in this section
 - table_style - changes the table style
 - table_caption - transforms markdown caption to the word caption for tables
-- figure_caption - - transforms markdown caption to the word caption for figures
+- figure_caption - transforms markdown caption to the word caption for figures
 - update_fields - updates all fields
 
 
