@@ -10,11 +10,11 @@ markdown -> docx word
 - install any MarkDown editor. I use Typora. Any simple text editor can be used, but this is not very convenient
 
 ## Files
-- <a href="https://github.cisco.com/relokhin/markdown2word/blob/master/render.py">render.py</a> - Python script. Takes data from the markdown file and inserts it into a Word document
-- <a href="https://github.cisco.com/relokhin/markdown2word/blob/master/structure.yml">structure.yml</a> - YAML file with all the necessary parameters for render.py
+- <a href="https://github.com/relokhin/markdown2word/blob/master/render.py">render.py</a> - Python script. Takes data from the markdown file and inserts it into a Word document
+- <a href="https://github.com/relokhin/markdown2word/blob/master/structure.yml">structure.yml</a> - YAML file with all the necessary parameters for render.py
 - template.docx is a Word document that we are going to fill out with the context of markdown documents. This Word document should have all the styles, templates ... you are going to use. This document is divided manually into sections. Each section corresponds to one chapter
-- <a href="https://github.cisco.com/relokhin/markdown2word/blob/master/example_chapter.md">f5_load_balancers.md</a> - markdown document with F5 information
-- <a href="https://github.cisco.com/relokhin/markdown2word/tree/master/initial">initial folder</a> - initial files
+- <a href="https://github.com/relokhin/markdown2word/blob/master/example_chapter.md">f5_load_balancers.md</a> - markdown document with F5 information
+- <a href="https://github.com/relokhin/markdown2word/tree/master/initial">initial folder</a> - initial files
 
 ## How to start
 - python3 render.py
@@ -23,7 +23,7 @@ markdown -> docx word
 
 ## render.py
 
-From <a href="https://github.cisco.com/relokhin/markdown2word/blob/master/structure.yml">structure.yml</a> you can see how this script works.
+From <a href="https://github.com/relokhin/markdown2word/blob/master/structure.yml">structure.yml</a> you can see how this script works.
 
 
 actions:  
