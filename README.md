@@ -1,6 +1,4 @@
 # md2docx
-
-# markdown2word
 markdown -> docx word 
 
 ## Installation
