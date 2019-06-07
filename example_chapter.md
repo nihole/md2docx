@@ -232,3 +232,9 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
+
+### Anchors
+
+[this is  a link](#anchor)
+
+[this is anchor]{#anchor}
