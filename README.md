@@ -42,5 +42,5 @@ actions:
 
 ## Work Flow
 
-![render.py work flow](media/md2word_work_flow.png) 
+![render.py work flow](media/md2word_work_flow.png | width = 500) 
  
