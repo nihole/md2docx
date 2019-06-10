@@ -44,4 +44,3 @@ actions:
 
 ![render.py work flow](https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png) 
  
-
