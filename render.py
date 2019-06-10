@@ -57,7 +57,7 @@ def figure_caption(sec_):
             + fgr.AlternativeText, Position=wdCaptionPositionBelow, ExcludeLabel=0)
             word.Selection.GoToNext (wdGoToLine)
             word.Selection.GoToNext (wdGoToLine)
-            word.Selection.Expand(wdLine)
+            word.Selection.Expand(wdParagraph)
 
             word.Selection.Delete()
 
