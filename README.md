@@ -42,7 +42,6 @@ actions:
 
 ## Work Flow
 
-![render.py work flow](media/md2word_work_flow.png) 
 
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png)
+<a href="url"><img src="media/md2word_work_flow.png" align="left" height="48" width="48" ></a>
  
