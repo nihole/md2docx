@@ -112,7 +112,7 @@ console.log(foo(5));
 
 ## Tables
 
-Table: Left aligned columns
+Left aligned columns<!--caption-->
 
 | Option | Description |
 | ------ | ----------- |
@@ -120,7 +120,7 @@ Table: Left aligned columns
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-Table: Right aligned columns
+Right aligned columns<!--caption-->
 
 | Option | Description |
 | ------:| -----------:|
@@ -141,9 +141,9 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 ## Images
 
 ![Minion](media/minion.png)
-Figiure: Minion
+Figiure: Minion<!--caption-->
 !["Stormtroopocat"](media/stormtroopocat.jpg)
-Figure: Stormtroopocat
+Figure: Stormtroopocat<!--caption-->
 
 
 ## Plugins
@@ -238,3 +238,9 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 [this is  a link](#anchor)
 
 [this is anchor]{#anchor}
+
+Comments:
+
+<!-- This is commented out. -->
+[comment]:
+
