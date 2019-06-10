@@ -43,5 +43,5 @@ actions:
 ## Work Flow
 
 
-<a href="url"><img src="media/md2word_work_flow.png" align="left" height="500" width="500" ></a>
+<a href="url"><img src="https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png" align="left" height="500" width="500" ></a>
  
