@@ -42,6 +42,5 @@ actions:
 
 ## Work Flow
 
+![render.py workflow:](https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png)
 
-<a href="https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png"><img src="https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png" align="left" height="100" width="100" ></a>
- 
