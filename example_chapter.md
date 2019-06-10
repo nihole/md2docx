@@ -140,10 +140,10 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
 
-![Minion](media/minion.png)
+![Minion](media/minion.png)  
 Figiure: Minion<!--caption-->  
 
-!["Stormtroopocat"](media/stormtroopocat.jpg)
+!["Stormtroopocat"](media/stormtroopocat.jpg)  
 Figure: Stormtroopocat<!--caption-->
 
 
