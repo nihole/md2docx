@@ -40,6 +40,8 @@ actions:
 - figure_caption - transforms markdown caption to the word caption for figures
 - update_fields - updates all fields
 
+## Work Flow
 
+![render.py work flow](https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png) 
  
 
