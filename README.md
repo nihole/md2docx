@@ -9,7 +9,7 @@ The Word format is the de facto standard for documentation in many companies. It
 
 If we want to take full advantage of GIT we have to use something else instead of Word. I think __MarkDown__ is a good choice. It is powerful enough and allows us to use GIT (for example, GitHub) to manage all changes.
 
-Now, if we have all the documentation created in MarkDown, we can __convert them to Word__ with corporate styles and requirements.
+Now, if we have all the documentation created in MarkDown, we can think about their __automatic conversion to Word__ with all necessary corporate styles and requirements.
 
 ## Possible or not?
 
