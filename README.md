@@ -30,7 +30,7 @@ and I will have exactly the same word file that I had when I created it manually
 - Markdown with some editor (I use Typora) - documents creation
 - GIT (GitHub for example) - version control system
 - Pandoc - MarkDown -> Wod (docx) conversion
-- YAML - describes the strucuture of the final Word document and for other input parameters for python script )render.py)
+- YAML - describes the strucuture of the final Word document and for other input parameters for python script (render.py)
 - Python with pywin32 - pywin32 permits to change Word file
 - MS Word (docx) - resulting document
 
