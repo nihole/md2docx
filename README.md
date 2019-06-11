@@ -13,7 +13,7 @@ Now, if we have all the documentation created in MarkDown, we can think about th
 
 ## Possible or not?
 
-We have Pandoc to convert MarkDown to Word. But, of course, we can not transform everything, and we have a lot of things in Word which are missing in MarkDown. And I think that it is impossible or very difficult to solve this task in general for all cases.
+We have Pandoc to convert MarkDown to Word. But, of course, we can not transform everything, and we have a lot of things in Word which are missing in MarkDown. So I think it is impossible or very difficult to solve this task in general for all cases.
 
 But the fact is that we don’t need to solve this problem for all cases. We only need to solve this for our particular one.
 
