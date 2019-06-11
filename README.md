@@ -17,13 +17,13 @@ We have Pandoc to convert MarkDown to Word. But, of course, we can not transform
 
 But the fact is that we don’t need to solve this problem for all cases. We only need to solve this for our particular one.
 
-For example, in my case I only need
+For example, in my case I only need to
 
 - add styles for all tables (in accordance with corporate requirements)
 - insert automatic table captions
 - insert automatic image captions
 
-and I will have exactly the same word file that I had when creating it manually (old style).
+and I have the exact same word file as I did when creating it manually (old style).
 
 ## Instruments
 
