@@ -34,6 +34,14 @@ and I have the exact same word file as I did when creating it manually (old styl
 - Python with pywin32 - pywin32 is used for Word file change
 - MS Word (docx) - resulting document
 
+## Procedure
+
+- if the document is large (for example, LLD), divide it into smaller pieces. Manage several small documents instead of one large.
+- use MarkDown with one of the markdown editors (I use Typora)
+- use GIT (gitlab, GithHub)
+- generate Microsoft Word document with all necessary styles, fields, templates,.. when it is needed. It should be one click procedure.
+
+
 ## High Level Workflow
 
 - Only MarkDown files are modified manually. Instead of managing one large file, it’s easy to manage several smaller ones
