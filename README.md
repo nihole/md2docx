@@ -13,7 +13,7 @@ Now, if we have all the documentation created in MarkDown, we can __convert them
 
 ## Possible or not?
 
-We have Pandoc to convert MarkDown to Word. But, of course, we can not transform everithing, and we have a lot of things in Word which are missing in MarkDown. And I think that it is impossible or very difficult to solve this task in general for all cases.
+We have Pandoc to convert MarkDown to Word. But, of course, we can not transform everything, and we have a lot of things in Word which are missing in MarkDown. And I think that it is impossible or very difficult to solve this task in general for all cases.
 
 But the fact is that we don’t need to solve this problem for all cases. We only need to solve this for our particular one.
 
@@ -23,14 +23,14 @@ For example, in my case I only need
 - insert automatic table captions
 - insert automatic image captions
 
-and I will have exactly the same word file that I had when I created it manually (in the old style).
+and I will have exactly the same word file that I had when creating it manually (old style).
 
 ## Instruments
 
 - Markdown with some editor (I use Typora) - documents creation
 - GIT (GitHub for example) - version control system
 - Pandoc - MarkDown->Wod (docx) conversion
-- YAML - YAML file (structure.yml) describes the strucuture of the final Word document and contains other input parameters for python script (render.py)
+- YAML - YAML file (structure.yml) describes the structure of the final Word document and contains other input parameters for python script (render.py)
 - Python with pywin32 - pywin32 is used for Word file change
 - MS Word (docx) - resulting document
 
