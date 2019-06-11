@@ -25,6 +25,8 @@ For example, in my case I only need to
 
 and I have the exact same word file as I did when creating it manually (old style).
 
+For this change we may use VBA macros but I prefer to use pywin32 package for python.
+
 ## Instruments
 
 - Markdown with some editor (I use Typora) - documents creation
