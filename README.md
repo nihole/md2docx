@@ -1,15 +1,38 @@
 # md2docx
 markdown -> docx word 
 
-The Word format is the de facto standard for documentation in many companies. It is a powerful tool with many features and settings. And everything looks perfect if you don’t need to make many changes by many employees. 
+The Word format is the de facto standard for documentation in many companies. It is a powerful tool with many features and settings. And everything looks perfect if you don’t need to make a lot of changes by many employees and keep track of all these changes, discussions and approvals.
 
-A wiki is usually used for internal documentation (for example, Confluence).But if you need to provide your documentation to the client and you need Word with corporate Word styles, some objects (like fields)..., you need to solve the problem of exporting wiki pages to a Word document. I think it is possible, but for me using GIT (instead of a wiki) looks more attractive in this case.
+A wiki is usually used for internal documentation (for example, Confluence).But if you need to provide your documentation to the client and you need Word with corporate Word styles, some objects (like fields)..., you need to solve the problem of exporting wiki pages to a Word document with such a format. I think it is possible, but for me using GIT (instead of a wiki) looks more attractive in this case.
 
 ## Idea
 
-We have to use something else instead of Word. I think __MarkDown__ is a good choice. This gives us enough feature set and text format. Therefore, we can use __GIT__ (for example, GitHub) to manage all changes. 
+We have to use something else instead of Word. I think __MarkDown__ is a good choice. It is powerful enough and allows us to use GIT (for example, GitHub) to manage all changes.
 
-Now, if we have all the documentation created in MarkDown, we can __convert them to Word__ with corporate styles and requirements
+Now, if we have all the documentation created in MarkDown, we can __convert them to Word__ with corporate styles and requirements.
+
+## Possible or not?
+
+We have Pandoc to convert MarkDown to Word. But, of course, we can not transform everithing, and we have a lot of things in Word which are missing in MarkDown. And I think that it is impossible or very difficult to solve this task in general for all cases.
+
+But the fact is that we don’t need to solve this problem all cases. We only need to solve this for our particular one.
+
+For example, in my case I only need
+
+- add styles for all tables (in accordance with corporate requirements)
+- insert automatic table captions
+- insert automatic image captions
+
+and I will have exactly the same word file that I had when I created it manually (in the old style).
+
+## Instruments
+
+- Markdown with some editor (I use Typora) - documents creation
+- GIT (GitHub for example) - version control system
+- Pandoc - MarkDown -> Wod (docx) conversion
+- YAML - describes the strucuture of the final Word document and for other input parameters for python script )render.py)
+- Python with pywin32 - pywin32 permits to change Word file
+- MS Word (docx) - resulting document
 
 ## High Level Workflow
 
