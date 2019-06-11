@@ -1,6 +1,23 @@
 # md2docx
 markdown -> docx word 
-<!-- This is commented out. -->
+
+The Word format is the de facto standard for documentation in many companies. It is a powerful tool with many features and settings. And everything looks perfect if you don’t need to make many changes by many employess. 
+
+A wiki is usually used for this (for example, Confluence). But in this case, you will have problems with exporting your wiki pages to a Word document with the expected styles, Word objects ... I think it is possible, but for me using GIT (instead of a wiki) looks more attractive.
+
+## Idea
+
+We have to use something else instead of Word. I think __MarkDown__ is a good choice. This gives us enough feature set and text format. Therefore, we can use __GIT__ (for example, GitHub) to manage all changes. 
+
+Now, if we have all the documentation created in MarkDown, we can __convert them to Word__ with corporate styles and requirements
+
+## High Level Workflow
+
+- Only MarkDown files are modified manually. Instead of managing one large file, it’s easy to manage several smaller ones
+- One of the first operations performed by render.py is to change the MarkDown files to docx format. This Word files have no styles, fields.. They are temporary and render.py removes them at the end
+- Using the structure.yml data and temporary docx files (created earlier) as input, render.py adds all the necessary Word objects (for example, fields), implement the styles and paste the converted data into the correct places in the resulting Word document
+
+![render.py workflow:](https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png)
 
 ## Installation
 - clone this project into your local folder
@@ -24,7 +41,6 @@ markdown -> docx word
 
 From <a href="https://github.com/nihole/md2docx/blob/master/structure.yml">structure.yml</a> you can see how this script works.
 
-
 actions:  
 &nbsp;&nbsp; structure_verification: "yes"  
 &nbsp;&nbsp; change_data: "yes"  
@@ -40,11 +56,4 @@ actions:
 - figure_caption - transforms markdown caption to the word caption for figures
 - update_fields - updates all fields
 
-## High Level Workflow
-
-- Only MarkDown files are modified manually. Instead of managing one large file, it’s easy to manage several smaller ones
-- One of the first operations performed by render.py is to change the MarkDown files to docx format. This Word files have no styles, fields.. They are temporary and render.py removes them at the end
-- Using the structure.yml data and temporary docx files (created earlier) as input, render.py adds all the necessary Word objects (for example, fields), implement the styles and paste the converted data into the correct places in the resulting Word document
-
-![render.py workflow:](https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png)
 
