@@ -7,7 +7,7 @@ A wiki is usually used for internal documentation (for example, Confluence).But 
 
 ## Idea
 
-With GIT we have to use something else instead of Word. I think __MarkDown__ is a good choice. It is powerful enough and allows us to use GIT (for example, GitHub) to manage all changes.
+If we want to take full advantage of GIT we have to use something else instead of Word. I think __MarkDown__ is a good choice. It is powerful enough and allows us to use GIT (for example, GitHub) to manage all changes.
 
 Now, if we have all the documentation created in MarkDown, we can __convert them to Word__ with corporate styles and requirements.
 
