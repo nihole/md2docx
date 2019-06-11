@@ -3,11 +3,11 @@ markdown -> docx word
 
 The Word format is the de facto standard for documentation in many companies. It is a powerful tool with many features and settings. And everything looks perfect if you don’t need to make a lot of changes by many employees and keep track of all these changes, discussions and approvals.
 
-A wiki is usually used for internal documentation (for example, Confluence).But if you need to provide your documentation to the client and you need Word with corporate Word styles, some objects (like fields)..., you need to solve the problem of exporting wiki pages to a Word document with such a format. I think it is possible, but for me using GIT (instead of a wiki) looks more attractive in this case.
+A wiki is usually used for internal documentation (for example, Confluence).But if you need to provide your documentation to the client and you need you need to solve some problems of exporting wiki pages to a Word document corporate styles. I think it is possible, but for me using GIT (instead of a wiki) looks more attractive.
 
 ## Idea
 
-We have to use something else instead of Word. I think __MarkDown__ is a good choice. It is powerful enough and allows us to use GIT (for example, GitHub) to manage all changes.
+To use GIT we have to use something else instead of Word. I think __MarkDown__ is a good choice. It is powerful enough and allows us to use GIT (for example, GitHub) to manage all changes.
 
 Now, if we have all the documentation created in MarkDown, we can __convert them to Word__ with corporate styles and requirements.
 
