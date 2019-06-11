@@ -3,7 +3,7 @@ markdown -> docx word
 
 The Word format is the de facto standard for documentation in many companies. It is a powerful tool with many features and settings. And everything looks perfect if you don’t need to make a lot of changes by many employees and keep track of all these changes, discussions and approvals.
 
-A wiki is usually used for internal documentation (for example, Confluence).But if you need to provide your documentation to the client and you need you need to solve some problems of exporting wiki pages to a Word document corporate styles. I think it is possible, but for me using GIT (instead of a wiki) looks more attractive.
+A wiki is usually used for internal documentation (for example, Confluence). But if you need to provide your documentation to the client and you need to solve some problems of exporting wiki pages to a Word document corporate styles. I think it is possible, but for me using GIT (instead of a wiki) looks more attractive.
 
 ## Idea
 
