@@ -73,6 +73,9 @@ actions:
 
 
 ## Installation
+
+Was tested for Windows 10.
+
 - clone this project into your local folder
 - install Python3 with YAML and pywin32 packages (win32com.client)
 - install Pandoc
