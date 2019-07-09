@@ -1,3 +1,6 @@
+This file is created for testing purpose.
+
+
 # Example Chapter
 
 
@@ -113,14 +116,15 @@ console.log(foo(5));
 ## Tables
 
 Table: Left aligned columns
+
 | Option | Description |
 | ------ | ----------- |
 | data   | path to data files to supply the data that will be passed into templates. |
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-
 Table: Right aligned columns
+
 | Option | Description |
 | ------:| -----------:|
 | data   | path to data files to supply the data that will be passed into templates. |
@@ -139,11 +143,10 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
 
-![Minion](media/minion.png)  
-Figure: Minion
-
-!["Stormtroopocat"](media/stormtroopocat.jpg)  
-Figure: Stormtroopocat  
+![Minion](media/minion.png)
+Figiure: Minion
+!["Stormtroopocat"](media/stormtroopocat.jpg)
+Figure: Stormtroopocat
 
 
 ## Plugins
@@ -232,17 +235,3 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
-
-### Anchors
-
-[this is  a link](#anchor)
-
-[this is anchor]{#anchor}
-
-Comments:
-
-<!-- This is commented out. -->
-[comment]:
-
-
-
