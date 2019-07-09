@@ -1,0 +1,65 @@
+# visible, save, close: yes/no, change script behaviour
+# structure_verification: yes/no, verify if the 1st header in the section is correct
+# change_data: yes/no, replace or not data inside the section with the data received from md file
+# table_style: yes/no, change or not the table style in this section
+# table_caption: yes/no, insert or not captions for the tables in this section based of the caption in the md file
+# figure_caption: yes/no, insert or not captions for the figures in this section based of the caption in the md file
+# update_fields: yes/no, update or not fields for whole word document
+
+
+script:
+  word:
+    visible: True
+    save: "no"
+    close: "no"
+  actions:
+    structure_verification: "yes"
+    change_data: "yes"
+    table_style: "yes"
+    table_caption: "yes"
+    figure_caption: "yes"
+    update_fields: "yes"
+  
+
+# table_style: table style
+# dest_word_file: path ot the word (docx) document
+    
+general:
+  table_style: "AS Table"
+  dest_word_file: "template.docx"
+
+# 
+# Manually split the word document into sections.
+# 
+# number: the number of the section (1,2,...)
+# name: the first title in the section. Scipt verifies if this title is really the first title if the section with the number above.
+# md_file: the path to the md file fom which you are going to take data 
+# action:  if "ignore" then will be ignored
+#
+
+sections:
+- number: 4
+  name: "Chapter 1"
+  description: ""
+  md_file: ""
+  action: "ignore"
+- number: 5
+  name: "Chapter 2"
+  description: ""
+  md_file: ""
+  action: "ignore"
+- number: 6
+  name: "Chapter 3"
+  description: ""
+  md_file: ""
+  action: "ignore"
+- number: 7
+  name: "Example Chapter"
+  description: ""
+  md_file: "example_chapter.md"
+  action: ""
+- number: 8
+  name: "Chapter 100"
+  description: ""
+  md_file: ""
+  action: "ignore"
