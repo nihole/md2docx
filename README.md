@@ -3,7 +3,7 @@ markdown -> docx word
 
 ## Why is MS Word not always the right choice?
 
-Microsoft Word is one of the most well-known de facto standards for documentation in many companies. It is a powerful tool with many features and settings. And everything looks perfect if you don’t need to make a lot of changes by many employees and keep track of all these changes, discussions and approvals. But we have another powerful tool with an excellent reputation for managing all of this. This is GIT. It is used in the development, but why not use it for documentation?
+Microsoft Word is one of the most well-known de facto standards for documentation in many companies. It is a powerful tool with many features and settings. And everything looks perfect if you don’t need to make a lot of changes by many employees and keep track of all these changes, discussions and approvals. But we have another powerful tool with an excellent reputation for managing all of this. This is GIT. It is used in the development, but why not to use it for documentation?
 
 ## Idea
 
