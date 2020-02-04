@@ -46,8 +46,8 @@ For this change we may use VBA macros but I prefer to use pywin32 package for py
 
 ## High Level Workflow
 
-- Only MarkDown files are modified manually. Instead of managing one large file, it’s easy to manage several smaller ones
-- One of the first operations performed by render.py is to convert the MarkDown files to docx format. This Word files have no styles, fields.. They are temporary and render.py removes them at the end
+- Only MarkDown files are modified manually. Instead of managing one large file, it’s easier to manage several smaller ones
+- One of the first operations performed by render.py is to convert the MarkDown files to docx format. This Word files have no styles, fields.. They are temporary and render.py removes them in the end
 - Using the structure.yml data and temporary docx files (created earlier) as input, render.py adds all the necessary Word objects (for example, fields), implement the styles and paste the converted data into the correct places in the resulting Word document
 
 ![render.py workflow:](https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png)
