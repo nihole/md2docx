@@ -23,7 +23,7 @@ For example, in my case I only need to
 - insert automatic table captions
 - insert automatic image captions
 
-and I have the exact same word file as I did when creating it manually (old style).
+and I have exactly the same Word file that I had when I created it manually (old style).
 
 For this change we may use VBA macros but I prefer to use pywin32 package for python.
 
