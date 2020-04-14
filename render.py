@@ -113,8 +113,11 @@ data1 = f.read()
 f.close()
 
 yaml_version = yaml.__version__
+m = re.match('(\d(\.\d)?)', yaml_version)
+yaml_ver = m.group(1)
 
-if (float(yaml_version) < 5.1):
+
+if (float(yaml_ver) < 5.1):
     yaml_data = yaml.load(data1)
 else:
     yaml_data = yaml.load(data1,Loader=yaml.FullLoader)
