@@ -105,5 +105,6 @@ To see how it works you can start with example.
 - cd example
 - python3 mkword.py structure/structure.yml
 - yes
+Check your templates/template.docx file. It should be opened and have a new content from example_chapter.md file. Close this file without saving.
 
 
