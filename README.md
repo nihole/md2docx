@@ -81,11 +81,9 @@ Was tested for Windows 10.
 - install Pandoc
 - install any MarkDown editor. I use Typora. Any simple text editor can be used, but this is not very convenient
 - copy folder 'example' to your local git repository. Change the name of the folder in accordance with your project. Now you can use this folder for new documentation creation
-- change mkword.py file: 
-  - change the path to the script/render.py file
-  - you may change the path to ./structure.yml
-- change or create appropriate Word template file
-- change in accordance with your documentation structure.yml file
+- edit mkword.py file: change the path to the script/render.py file if necessary
+- edit or create appropriate Word template file
+- change or create structure.yml file
 - create MarkDown file
 - execute python3 mkword.py
 - new Word file will be created from your MarkDown file
@@ -93,17 +91,19 @@ Was tested for Windows 10.
 
 ## Files in Example
 - <a href="https://github.com/nihole/md2docx/blob/master/scripts/render.py">render.py</a> - Python script. Takes data from the markdown file, converts and inserts it into a Word document. This is a static file. You usually don't need to change it. You even don't need to copy this file to your local git repository but you need to add the path to this file into mkword.py file
-- <a href="https://github.com/nihole/md2docx/blob/master/example/structure.yml">structure.yml</a> - YAML file with all the necessary parameters for render.py. Normally you adjust this file only once at the beginning. You have to add the path to this file into the mkword.py file
+- <a href="https://github.com/nihole/md2docx/blob/master/example/structure/structure.yml">structure.yml</a> - YAML file with all the necessary parameters for render.py. Normally you adjust this file only once at the beginning. The path is used as argument for the mkword.py. 
 - folder  <a href="https://github.com/nihole/md2docx/blob/master/example/templates">templates</a> - folder with Word templates
 - <a href="https://github.com/nihole/md2docx/blob/master/example/templates/template.docx">template.docx</a> is a Word document that we are going to fill out with the context of markdown documents. This Word document should have all the styles, templates ... you are going to use. This document is divided manually into sections. Each section corresponds to one chapter
 - folder <a href="https://github.com/nihole/md2docx/blob/master/example/media">media</a> - folder with pictures
 - <a href="https://github.com/nihole/md2docx/blob/master/example/example_chapter.md">example_chapter.md</a> - markdown document with example information. Of course, for your documentation, the name will differ. You have to add the path to this file into mkword.py file
-- <a href="https://github.com/nihole/md2docx/blob/master/example/mkword.py">mkword.py</a> - python script with the references to render.py and structure.yml files.
+- <a href="https://github.com/nihole/md2docx/blob/master/example/mkword.py">mkword.py</a> - python script. You have to edit this file and change the path to render.py file. 
+  Syntax is: python3 mkword.py structure/structure.yml
 
 ## How to start
+To see how it works you can start with example.
+
 - cd example
-- python3 mkword.py
-- yes
+- python3 mkword.py structure/structure.yml
 - yes
 
 
