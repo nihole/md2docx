@@ -50,11 +50,11 @@ For this change we may use VBA macros but I prefer to use pywin32 package for py
 - One of the first operations performed by render.py is to convert the MarkDown files to docx format. This Word files have no styles, fields.. They are temporary and render.py removes them in the end
 - Using the structure.yml data and temporary docx files (created earlier) as input, render.py adds all the necessary Word objects (for example, fields), implement the styles and paste the converted data into the correct places in the resulting Word document
 
-![render.py workflow:](https://github.com/nihole/md2docx/blob/master/media/md2word_work_flow.png)
+![render.py workflow:](https://github.com/nihole/md2docx/blob/master/example/media/md2word_work_flow.png)
 
 ## render.py
 
-From <a href="https://github.com/nihole/md2docx/blob/master/structure.yml">structure.yml</a> you can see how this script works.
+From <a href="https://github.com/nihole/md2docx/blob/master/example/structure.yml">structure.yml</a> you can see how this script works.
 
 actions:  
 &nbsp;&nbsp; structure_verification: "yes"  
@@ -92,13 +92,13 @@ Was tested for Windows 10.
 - now you can use git for documentation creation
 
 ## Files in Example
-- <a href="https://github.com/nihole/md2docx/blob/master/render.py">render.py</a> - Python script. Takes data from the markdown file, converts and inserts it into a Word document. This is a static file. You usually don't need to change it. You even don't need to copy this file to your local git repository but you need to add the path to this file into mkword.py file
-- <a href="https://github.com/nihole/md2docx/blob/master/structure.yml">structure.yml</a> - YAML file with all the necessary parameters for render.py. Normally you adjust this file only once at the beginning. You have to add the path to this file into the mkword.py file
-- folder templates - folder with Word templates
-- template.docx is a Word document that we are going to fill out with the context of markdown documents. This Word document should have all the styles, templates ... you are going to use. This document is divided manually into sections. Each section corresponds to one chapter
-- folder media - folder with pictures
-- <a href="https://github.com/nihole/md2docx/blob/master/example_chapter.md">example_chapter.md</a> - markdown document with example information. Of course, for your documentation, the name will differ. You have to add the path to this file into mkword.py file
-- mkword.py - python script with the references to render.py and structure.yml files.
+- <a href="https://github.com/nihole/md2docx/blob/master/scripts/render.py">render.py</a> - Python script. Takes data from the markdown file, converts and inserts it into a Word document. This is a static file. You usually don't need to change it. You even don't need to copy this file to your local git repository but you need to add the path to this file into mkword.py file
+- <a href="https://github.com/nihole/md2docx/blob/master/example/structure.yml">structure.yml</a> - YAML file with all the necessary parameters for render.py. Normally you adjust this file only once at the beginning. You have to add the path to this file into the mkword.py file
+- folder  <a href="https://github.com/nihole/md2docx/blob/master/example/templates">templates</a> - folder with Word templates
+- <a href="https://github.com/nihole/md2docx/blob/master/example/templates/template.docx">template.docx</a> is a Word document that we are going to fill out with the context of markdown documents. This Word document should have all the styles, templates ... you are going to use. This document is divided manually into sections. Each section corresponds to one chapter
+- folder <a href="https://github.com/nihole/md2docx/blob/master/example/media">media</a> - folder with pictures
+- <a href="https://github.com/nihole/md2docx/blob/master/example/example_chapter.md">example_chapter.md</a> - markdown document with example information. Of course, for your documentation, the name will differ. You have to add the path to this file into mkword.py file
+- <a href="https://github.com/nihole/md2docx/blob/master/example/mkword.py">mkword.py</a> - python script with the references to render.py and structure.yml files.
 
 ## How to start
 - cd example
