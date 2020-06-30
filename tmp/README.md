@@ -1,2 +1,0 @@
-for tmp word files
-
