@@ -3,17 +3,17 @@ import sys
 
 render_path = '../scripts/render.py'
 
-structure_path  = './structure.yml'
-
 ######### Main Body ######################
 
 
 ######### get file's names from the command line ####################
-if not (len(sys.argv)==1):
+if (len(sys.argv)==2):
+    structure_path = sys.argv[1]
+else:
     print ("   ######################################################\n")
     print ("   Syntax is:\n")
-    print ("   python3 mkword.py\n")
-    print ("   Change paths in mkword.py if needed.\n")
+    print ("   python3 mkword.py structure/structure.yml\n")
+    print ("   Change paths to render.py in mkword.py if needed.\n")
     print ("   ######################################################\n")
     quit()
 
