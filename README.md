@@ -100,7 +100,7 @@ Was tested for Windows 10.
   Syntax is: python3 mkword.py structure/structure.yml
 
 ## How to start
-To see how it works you can start with example.
+To see how it works you can start with an example.
 
 - cd example
 - python3 mkword.py structure/structure.yml
